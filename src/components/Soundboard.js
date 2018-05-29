@@ -8,7 +8,6 @@ const Soundboard = ({character}) => {
   ));
   return (
     <div>
-      <h1>Hello from the Soundboard!</h1>
       {sounds}
     </div>
   );
