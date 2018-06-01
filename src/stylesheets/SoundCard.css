@@ -3,6 +3,7 @@
   border-radius: 5px;
   background-color: #68038E;
   outline: none;
+  box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.54);
 }
 
 .sound-card:hover {
@@ -20,12 +21,18 @@
 .sound-button {
   background: none;
   border: none;
-  color: white;
-  font-size: 20px;
   margin: auto;
   padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
   width: 100%;
   height: 100%;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 20px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
 }

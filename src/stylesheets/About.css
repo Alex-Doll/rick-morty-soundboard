@@ -1,0 +1,29 @@
+.about {
+  text-align: center;
+  color: white;
+}
+
+.button {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  line-height: 20px;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 400;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background-color: #1496BC;
+  box-shadow: rgba(0, 0, 0, 0.61) 5px 5px 15px 0px;
+  border: 2px solid rgb(28, 110, 164);
+  display: inline-block;
+}
+
+.button:hover {
+  background: #1C6EA4;
+}
+
+.button:active {
+  background: #144E75;
+}
