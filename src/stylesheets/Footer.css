@@ -1,0 +1,16 @@
+.footer {
+  background-color: #26273C;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.footer p {
+  line-height: 5px;
+}
+
+.footer a {
+  color: #00afc7;
+  text-decoration: none;
+}
