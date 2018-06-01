@@ -5,10 +5,10 @@ import '../stylesheets/Navbar.css';
 
 const Navbar = () => (
   <nav className="navbar">
-    <Link to="/">
-      <img src={logo} alt="Home" />
+    <Link className="image-link" to="/">
+      <img id="home-image" src={logo} alt="Home" />
     </Link>
-    <Link to="/about">About</Link>
+    <Link className="text-link" to="/about">About</Link>
   </nav>
 );
 

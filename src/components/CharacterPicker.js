@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Soundboard from './Soundboard';
 import characters from '../data/CharacterData';
+import '../stylesheets/CharacterPicker.css';
 
 class CharacterPicker extends Component {
   constructor(props) {
@@ -23,19 +24,21 @@ class CharacterPicker extends Component {
   
   render() {
     let characterOptions = characters.map((character, index) => (
-      <option key={index} value={character.name}>{character.name}</option>
+      <option className="character-option" key={index} value={character.name}>{character.name}</option>
     ));
     let currCharacterObj = characters.filter((character) => character.name === this.state.currCharacter)[0];
     
     return (
-      <div>
-        <img src={currCharacterObj.imageUrl} alt={currCharacterObj.name} />
-        <form onSubmit={this.handleSubmit}>
-          <select onChange={this.handleChange}>
-            {characterOptions}
-          </select>
-        </form>
-        <Soundboard character={this.state.currCharacter} />
+      <div className="character-picker">
+        <div className="character-content">
+          <img className="character-image" src={currCharacterObj.imageUrl} alt={currCharacterObj.name} />
+          <form className="character-menu" onSubmit={this.handleSubmit}>
+              <select onChange={this.handleChange}>
+                {characterOptions}
+              </select>
+          </form>
+        </div>
+        <Soundboard className="soundboard" character={this.state.currCharacter} />
       </div>
     );
   }

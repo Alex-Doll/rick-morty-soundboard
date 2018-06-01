@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ReactHowler from 'react-howler';
+import '../stylesheets/SoundCard.css';
 
 class SoundCard extends Component {
   constructor(props) {
@@ -27,14 +28,14 @@ class SoundCard extends Component {
     let {sound, title} = this.props;
     
     return (
-      <div>
+      <div className="sound-card">
         <ReactHowler
           src={sound}
           playing={this.state.playing}
           ref={(ref) => (this.player = ref)}
           onEnd={this.handleEnd}
         />
-        <button onClick={this.handleClick}>{title}</button>
+        <button className="sound-button" onClick={this.handleClick}>{title}</button>
       </div>
     );
   }
